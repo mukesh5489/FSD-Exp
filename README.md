@@ -1,35 +1,34 @@
-# fsd
-Full Stack Learning Platform
-The project is a web-based platform aimed at guiding users through structured learning paths for programming languages and web development technologies. It includes interactive roadmaps, quizzes, and resources to help users build their skills step-by-step.
+# Full Stack Learning Platform
 
-Key Features:
-Interactive Roadmaps:
+A web-based platform designed to provide structured roadmaps and resources for learning programming languages and web development technologies. This project is ideal for beginners and self-learners who want a guided approach to mastering coding skills.
 
-Each programming language or technology (e.g., C, C++, Java, Python, HTML, CSS, JavaScript) has a dedicated roadmap.
-The roadmaps are divided into daily learning goals with links to external resources (e.g., YouTube tutorials, W3Schools, MDN).
-Quizzes:
+---
 
-After completing a roadmap, users can take quizzes to test their knowledge.
-Quizzes are interactive and provide feedback based on the user's score.
-Dynamic Navigation:
+## Features
 
-Users can navigate between different roadmaps and topics using buttons and links.
-The platform includes a home page with options to explore topics like Wikipedia, Sports, Timetable, and Programming Languages.
-Progress Tracking:
+### 1. **Interactive Roadmaps**
+- Each programming language or technology (e.g., C, C++, Java, Python, HTML, CSS, JavaScript) has a dedicated roadmap.
+- Roadmaps are divided into daily learning goals with links to external resources like YouTube tutorials and documentation.
 
-Users can mark topics as completed using checkboxes.
-The "Take Quiz" button becomes enabled only after all topics in a roadmap are marked as completed.
-Responsive Design:
+### 2. **Quizzes**
+- Users can take quizzes after completing a roadmap to test their knowledge.
+- The "Take Quiz" button is enabled only after all topics in the roadmap are marked as completed.
 
-The platform is styled with modern CSS, ensuring a visually appealing and user-friendly interface.
-Features like hover effects, animations, and transitions enhance the user experience.
-Resource Integration:
+### 3. **Dynamic Navigation**
+- Navigate between topics like Wikipedia, Sports, Timetable, and Programming Languages using the home page.
+- Each topic is linked to its respective page for detailed information.
 
-External resources like YouTube videos, W3Schools, and MDN are integrated for in-depth learning.
-Technologies Used:
-Frontend: HTML, CSS, JavaScript
-Backend: Not explicitly mentioned, but could be added for dynamic features.
-File Structure:
-templates: Contains HTML files for roadmaps and quizzes.
-img: Stores images like logos.
-index.html: Serves as the home page.
+### 4. **Progress Tracking**
+- Users can mark topics as completed using checkboxes.
+- Progress is dynamically tracked, and the platform ensures users complete all tasks before accessing quizzes.
+
+### 5. **Responsive Design**
+- Modern CSS ensures a visually appealing and user-friendly interface.
+- Includes hover effects, animations, and transitions for enhanced user experience.
+
+### 6. **Resource Integration**
+- External resources like YouTube videos, W3Schools, and MDN are integrated for in-depth learning.
+
+---
+
+## File Structure
