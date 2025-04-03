@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Python Learning Roadmap</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #343a40;
+        }
+        
+        nav a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            background-color: #495057;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 2rem 0;
+        }
+        
+        h2 {
+            color: #007bff;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .quiz-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .quiz-btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .quiz-btn:hover:enabled {
+            background-color: #45a049;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Python Learning Roadmap</h1>
+</header>
+
+<nav>
+    <a href="#roadmap">Roadmap</a>
+</nav>
+<div class="container">
+
+    <section id="roadmap">
+        <h2>15-Day Python Roadmap</h2>
+        <table id="roadmapTable">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Resources</th>
+                    <th>Completed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="7">Week 1</td>
+                    <td>Day 1</td>
+                    <td>Introduction to Python</td>
+                    <td><a href="https://www.youtube.com/watch?v=7wnove7K-ZQ" target="_blank">Python Basics</a></td>
+                    <td><input type="checkbox" class="checkbox" onchange="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 2</td>
+                    <td>Variables and Data Types</td>
+                    <td><a href="https://www.youtube.com/watch?v=Tto8TS-fJQU" target="_blank">Python Variables</a></td>
+                    <td><input type="checkbox" class="checkbox" onchange="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 3</td>
+                    <td>Modules and Package Management</td>
+                    <td><a href="https://www.youtube.com/watch?v=xwKO_y2gHxQ" target="_blank">Modules and Pip</a></td>
+                    <td><input type="checkbox" class="checkbox" onchange="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 4</td>
+                    <td>Writing Your First Python Program</td>
+                    <td><a href="https://www.youtube.com/watch?v=7IWOYhfAcVg" target="_blank">First Python Program</a></td>
+                    <td><input type="checkbox" class="checkbox" onchange="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 5</td>
+                    <td>Comments and Escape Sequences</td>
+                    <td><a href="https://www.youtube.com/watch?v=qxPMmW93eDs" target="_blank">Python Comments</a></td>
+                    <td><input type="checkbox" class="checkbox" onchange="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 6</td>
+                    <td>Functions in Python</td>
+                    <td><a href="https://www.youtube.com/watch?v=dpoqCbMNKPs" target="_blank">Python Functions</a></td>
+                    <td><input type="checkbox" class="checkbox" onchange="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 7</td>
+                    <td>Lists and Dictionaries</td>
+                    <td><a href="https://www.youtube.com/watch?v=NqacT1CjkmQ" target="_blank">Python Lists & Dictionaries</a></td>
+                    <td><input type="checkbox" class="checkbox" onchange="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td rowspan="7">Week 2</td>
+                    <td>Day 8</td>
+                    <td>Conditional Statements</td>
+                    <td><a href="https://www.youtube.com/watch?v=ceiuLR2ysas" target="_blank">Python If-Else</a></td>
+                    <td><input type="checkbox" class="checkbox" onchange="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 9</td>
+                    <td>Loops in Python</td>
+                    <td><a href="https://www.youtube.com/watch?v=9RqEPSDqhg0" target="_blank">Python Loops</a></td>
+                    <td><input type="checkbox" class="checkbox" onchange="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 10</td>
+                    <td>File Handling</td>
+                    <td><a href="https://www.youtube.com/watch?v=wDhxfmYAvVo" target="_blank">Python File Handling</a></td>
+                    <td><input type="checkbox" class="checkbox" onchange="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 11</td>
+                    <td>Error Handling</td>
+                    <td><a href="https://www.youtube.com/watch?v=yuRBMocASmQ" target="_blank">Python Exception Handling</a></td>
+                    <td><input type="checkbox" class="checkbox" onchange="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 12</td>
+                    <td>Object-Oriented Programming</td>
+                    <td><a href="https://www.youtube.com/watch?v=1ax3JUQrrts" target="_blank">Python OOP</a></td>
+                    <td><input type="checkbox" class="checkbox" onchange="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 13</td>
+                    <td>Python Libraries Overview</td>
+                    <td><a href="https://www.youtube.com/watch?v=GfKZecodPcY" target="_blank">Python Libraries</a></td>
+                    <td><input type="checkbox" class="checkbox" onchange="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 14</td>
+                    <td>Final Project</td>
+                    <td>N/A</td>
+                    <td><input type="checkbox" class="checkbox" onchange="checkCompletion()"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="quizButton" class="quiz-btn" disabled onclick="takeQuiz()">Take Quiz</button>
+    </section>
+</div>
+
+<script>
+    function checkCompletion() {
+        const checkboxes = document.querySelectorAll('.checkbox');
+        const quizButton = document.getElementById('quizButton');
+        const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
+        quizButton.disabled = !allChecked;
+    }
+
+    function takeQuiz() {
+        alert('Redirecting to the quiz...');
+      
+        window.location.href = 'quiz/p_quiz.html';
+    }
+</script>
+</body>
+</html>

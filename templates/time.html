@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #000;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .header {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .home-btn {
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .home-btn:hover {
+            background-color: #ff4500;
+        }
+
+        .PAI { background-color: #ffcccb; }
+        .FULLSTACK { background-color: #90ee90; }
+        .SDS { background-color: #add8e6; }
+        .DLCO { background-color: #ffb6c1; }
+        .DTI { background-color: #ffffe0; }
+        .IDS { background-color: #dda0dd; }
+        .MEFA { background-color: #f0e68c; }
+        .COUN { background-color: #d3d3d3; }
+        .SPORTS { background-color: #ffdead; }
+        .IA { background-color: #e6e6fa; }
+        .VS { background-color: #f5deb3; }
+        .LIB { background-color: #ffe4e1; }
+        .WEEKLYTEST { background-color: #ffebcd; }
+        .LAB { background-color: #d8bfd8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="home-btn" onclick="goHome()">Home</button>
+        <div class="header">
+            VIGNAN'S INSTITUTE OF INFORMATION TECHNOLOGY (A)::VISAKHAPATNAM<br>
+            DEPARTMENT OF AI&DS<br>
+            II B.TECH - II SEM; AY: 2024-2025 (2023 ADMITTED)
+        </div>
+        <table>
+            <tr>
+                <th rowspan="2">Time/Day</th>
+                <th colspan="4">SECTION 2</th>
+                <th colspan="4">w.e.f : 03.02.2025</th>
+            </tr>
+            <tr>
+                <th>10:00-10:50</th>
+                <th>10:50-11:40</th>
+                <th>11:40-12:30</th>
+                <th>12:30-1:20</th>
+                <th>1:20-2:10</th>
+                <th>2:10-3:00</th>
+                <th>3:00-3:50</th>
+                <th>4:00-4:50</th>
+            </tr>
+            <tr>
+                <td>MON</td>
+                <td class="PAI">PAI</td>
+                <td class="FULLSTACK">FULL STACK(AB-04)</td>
+                <td class="FULLSTACK">FULL STACK(AB-04)</td>
+                <td class="SDS">SDS</td>
+                <td rowspan="6">LUNCH</td>
+                <td class="LAB">IDS LAB(AB-05)</td>
+                <td class="LAB">IDS LAB(AB-05)</td>
+                <td class="LAB">IDS LAB(AB-05)</td>
+            </tr>
+            <tr>
+                <td>TUE</td>
+                <td class="DLCO">DLCO</td>
+                <td class="PAI">PAI</td>
+                <td class="DTI">DTI</td>
+                <td class="DTI">DTI</td>
+                <td class="IDS">IDS</td>
+                <td class="MEFA">MEFA</td>
+                <td class="DLCO">DLCO</td>
+            </tr>
+            <tr>
+                <td>WED</td>
+                <td class="WEEKLYTEST">WEEKLY TEST</td>
+                <td class="WEEKLYTEST">WEEKLY TEST</td>
+                <td class="MEFA">MEFA</td>
+                <td class="IDS">IDS</td>
+                <td class="PAI">PAI</td>
+                <td class="DLCO">DLCO</td>
+                <td class="COUN">COUN</td>
+            </tr>
+            <tr>
+                <td>THU</td>
+                <td class="SDS">SDS</td>
+                <td class="VS">VS</td>
+                <td class="DLCO">DLCO</td>
+                <td class="IDS">IDS</td>
+                <td class="PAI">PAI</td>
+                <td class="MEFA">MEFA</td>
+                <td class="SPORTS">SPORTS</td>
+            </tr>
+            <tr>
+                <td>FRI</td>
+                <td class="MEFA">MEFA</td>
+                <td class="SDS">SDS</td>
+                <td class="PAI">PAI</td>
+                <td class="IDS">IDS</td>
+                <td class="LAB">PAI LAB(AB-05)</td>
+                <td class="LAB">PAI LAB(AB-05)</td>
+                <td class="LAB">PAI LAB(AB-05)</td>
+            </tr>
+            <tr>
+                <td>SAT</td>
+                <td class="DLCO">DLCO</td>
+                <td class="IA">IA</td>
+                <td class="SDS">SDS</td>
+                <td class="IDS">IDS</td>
+                <td class="SDS">SDS</td>
+                <td class="MEFA">MEFA</td>
+                <td class="LIB">LIB</td>
+            </tr>
+        </table>
+        <div class="header">
+            Class Coordinator: Mr.P.Vijaya Bhaskar
+        </div>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Name of the Faculty</th>
+                <th>Mobile</th>
+            </tr>
+            <tr>
+                <td>Managerial Economics & Financial Analysis</td>
+                <td>Auadhati Datta</td>
+                <td>8688216627</td>
+            </tr>
+            <tr>
+                <td>Statistical Methods for Data Science</td>
+                <td>N.Jaya Lalitha</td>
+                <td>6281492929</td>
+            </tr>
+            <tr>
+                <td>Principles of Artificial Intelligence</td>
+                <td>P.Vijay Bhaskar</td>
+                <td>9949527639</td>
+            </tr>
+            <tr>
+                <td>Introduction to Data Science</td>
+                <td>Dr.J.Peter Praveen</td>
+                <td>9949865863</td>
+            </tr>
+            <tr>
+                <td>Digital Logic & Computer Organization</td>
+                <td>Mr.A.Venkatesh</td>
+                <td>8712194772</td>
+            </tr>
+            <tr>
+                <td>Artificial Intelligence Lab</td>
+                <td>P.Vijay Bhaskar/ B.Madhavi</td>
+                <td>9949527639/ 8070404677</td>
+            </tr>
+            <tr>
+                <td>Data Science using Python Lab</td>
+                <td>Dr.J.Peter Praveen/ P.Vijay Bhaskar</td>
+                <td>9949865863/ 9949527639</td>
+            </tr>
+            <tr>
+                <td>Full Stack Development-1</td>
+                <td>B.Prameela</td>
+                <td>9701296324</td>
+            </tr>
+            <tr>
+                <td>Design Thinking & Innovation</td>
+                <td>Dr.K.K.Deepika</td>
+                <td>8688889988</td>
+            </tr>
+            <tr>
+                <td>Innovation Activities</td>
+                <td>P.Vijay Bhaskar</td>
+                <td>9949527639</td>
+            </tr>
+            <tr>
+                <td>Verbal Skills</td>
+                <td>B.Eekshita</td>
+                <td>9957584444</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function goHome() {
+            window.location.href = '../index.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>C++ Learning Roadmap</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #343a40;
+        }
+        
+        nav a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            background-color: #495057;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 2rem 0;
+        }
+        
+        h2 {
+            color: #007bff;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .quiz-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .quiz-btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .quiz-btn:hover:enabled {
+            background-color: #45a049;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>C++ Learning Roadmap</h1>
+</header>
+
+<nav>
+    <a href="#roadmap">Roadmap</a>
+</nav>
+<div class="container">
+
+    <section id="roadmap">
+        <h2>20-Day C++ Roadmap</h2>
+        <table id="roadmapTable">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Resources</th>
+                    <th>Completed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="7">Week 1</td>
+                    <td>Day 1</td>
+                    <td>Introduction to C++</td>
+                    <td><a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y" target="_blank">C++ Basics</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 2</td>
+                    <td>Setting Up Environment</td>
+                    <td><a href="https://www.youtube.com/watch?v=UB0wEO1Jy74" target="_blank">C++ Setup</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 3</td>
+                    <td>Variables and Data Types</td>
+                    <td><a href="https://www.youtube.com/watch?v=ZzaPdXTrSb8" target="_blank">C++ Variables</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 4</td>
+                    <td>Operators in C++</td>
+                    <td><a href="https://www.youtube.com/watch?v=9v_YMM1bTHU" target="_blank">C++ Operators</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 5</td>
+                    <td>Control Flow (If-Else, Switch)</td>
+                    <td><a href="https://www.youtube.com/watch?v=6tNS--WetLI" target="_blank">C++ Control Flow</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 6</td>
+                    <td>Loops (For, While, Do-While)</td>
+                    <td><a href="https://www.youtube.com/watch?v=5MgBikgcWnY" target="_blank">C++ Loops</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 7</td>
+                    <td>Functions in C++</td>
+                    <td><a href="https://www.youtube.com/watch?v=UcmN4TO4IE8" target="_blank">C++ Functions</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td rowspan="7">Week 2</td>
+                    <td>Day 8</td>
+                    <td>Arrays in C++</td>
+                    <td><a href="https://www.youtube.com/watch?v=0qeh3U0a1ac" target="_blank">C++ Arrays</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 9</td>
+                    <td>Pointers</td>
+                    <td><a href="https://www.youtube.com/watch?v=zuegQmMdy8M" target="_blank">C++ Pointers</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 10</td>
+                    <td>Structures and Classes</td>
+                    <td><a href="https://www.youtube.com/watch?v=ZOKLjJF54Xc" target="_blank">C++ Classes</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 11</td>
+                    <td>Object-Oriented Programming</td>
+                    <td><a href="https://www.youtube.com/watch?v=1WgI_k1jO_g" target="_blank">OOP Concepts</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 12</td>
+                    <td>Inheritance</td>
+                    <td><a href="https://www.youtube.com/watch?v=QjCg2tW4M-U" target="_blank">C++ Inheritance</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 13</td>
+                    <td>Polymorphism</td>
+                    <td><a href="https://www.youtube.com/watch?v=Z9IehI3Oduk" target="_blank">C++ Polymorphism</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 14</td>
+                    <td>Templates</td>
+                    <td><a href="https://www.youtube.com/watch?v=I-hZkUa9mIs" target="_blank">C++ Templates</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td rowspan="7">Week 3</td>
+                    <td>Day 15</td>
+                    <td>Exception Handling</td>
+                    <td><a href="https://www.youtube.com/watch?v=w4s1h2QeWw8" target="_blank">C++ Exceptions</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 16</td>
+                    <td>STL (Standard Template Library)</td>
+                    <td><a href="https://www.youtube.com/watch?v=3v-OOj6N2cw" target="_blank">C++ STL</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 17</td>
+                    <td>File Handling</td>
+                    <td><a href="https://www.youtube.com/watch?v=Lub5qOmY4JQ" target="_blank">C++ File Handling</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 18</td>
+                    <td>Multithreading</td>
+                    <td><a href="https://www.youtube.com/watch?v=e6zGX3pZ_Ls" target="_blank">C++ Multithreading</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 19</td>
+                    <td>Memory Management</td>
+                    <td><a href="https://www.youtube.com/watch?v=R9eRth6-Obc" target="_blank">C++ Memory Management</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+                <tr>
+                    <td>Day 20</td>
+                    <td>Project: Build a Simple C++ Application</td>
+                    <td><a href="https://www.youtube.com/watch?v=m8lPaNXrOPs" target="_blank">C++ Project Tutorial</a></td>
+                    <td><input type="checkbox" class="checkbox" onclick="checkCompletion()"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="quizButton" class="quiz-btn" disabled onclick="takeQuiz()">Take Quiz</button>
+    </section>
+</div>
+
+<script>
+    function checkCompletion() {
+        const checkboxes = document.querySelectorAll('.checkbox');
+        const quizButton = document.getElementById('quizButton');
+        const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
+        quizButton.disabled = !allChecked;
+    }
+
+    function takeQuiz() {
+        alert('Redirecting to the quiz...');
+       
+        window.location.href = 'quiz/cpp_quiz.html';
+    }
+</script>
+</body>
+</html>

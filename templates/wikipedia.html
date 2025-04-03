@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wikipedia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .container h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .container p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 20px;
+            color: #333;
+        }
+
+        .wiki-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .wiki-btn:hover {
+            background-color: #45a049;
+        }
+        .home-btn {
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .home-btn:hover {
+            background-color: #ff4500;
+        }
+        button, .wiki-btn {
+            background-color: #fff;
+            color: #333;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        }
+
+        button:hover, .wiki-btn:hover {
+            background-color: #ddd;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 25px rgba(0, 255, 255, 0.5), 0 0 35px rgba(0, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="home-btn" onclick="goHome()">Home</button>
+        <img src="/img/wiki.jpg" alt="Wikipedia Logo">
+        <h1>Albert Einstein</h1>
+        <p>Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist who is best known for developing the theory of relativity.
+             Einstein also made important contributions to quantum mechanics. His mass–energy equivalence formula E = mc2, which arises from special relativity,
+              has been called "the world's most famous equation". He received the 1921 Nobel Prize in Physics for his services to theoretical physics, 
+            and especially for his discovery of the law of the photoelectric effect.</p>
+        <a href="https://en.wikipedia.org/wiki/Albert_Einstein" class="wiki-btn" target="_blank">Read more on Wikipedia</a>
+    </div>
+    <script>
+        function goHome() {
+            window.location.href = '/index.html';
+        }
+    </script>
+</body>
+</html>
