@@ -32,3 +32,4 @@ A web-based platform designed to provide structured roadmaps and resources for l
 ---
 
 ## File Structure
+fsd/ ├── index.html # Home page ├── templates/ │ ├── roadmap/ │ │ ├── c.html # C Language Roadmap │ │ ├── ... # Other roadmaps │ ├── quiz/ │ │ ├── c_quiz.html # C Quiz Page │ │ ├── ... # Other quizzes ├── img/ │ ├── logo.jpg # Logo image │ ├── ... # Other images
