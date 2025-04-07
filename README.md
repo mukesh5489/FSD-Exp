@@ -43,4 +43,4 @@ A web-based platform designed to provide structured roadmaps and resources for l
 
 1. Clone the repository:
    ```bash
-   git clone <(https://github.com/mukesh5489/FSD-Exp.git)>
+   git clone <https://mukesh5489.github.io/FSD-Exp/>
