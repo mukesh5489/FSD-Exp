@@ -10,6 +10,9 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -47,6 +50,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            flex-grow: 1;
         }
 
         .item {
@@ -132,13 +136,29 @@
         }
 
         footer {
-            background-color: rgba(0, 0, 0, 0.3);
-            padding: 15px;
-            text-align: center;
-            font-size: 1em;
-            margin-top: 40px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            font-size: 1.5em;
             color: #fff;
-            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .scrolling-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll-left 15s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
         }
     </style>
 </head>
@@ -179,7 +199,7 @@
     </main>
 
     <footer>
-        &copy; 2025 Dynamic Programmer. All rights reserved.
+        <div class="scrolling-text">&copy; 2025 Dynamic Programmer — All Rights Reserved — Crafted with passion by P Mukesh Sai</div>
     </footer>
 
     <script>
