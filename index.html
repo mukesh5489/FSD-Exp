@@ -30,6 +30,18 @@
             font-size: 2.5em;
         }
 
+        .info-box {
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
         main {
             padding: 20px;
             display: flex;
@@ -118,6 +130,16 @@
         .open-btn {
             background-color: #2196F3;
         }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            text-align: center;
+            font-size: 1em;
+            margin-top: 40px;
+            color: #fff;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -125,6 +147,14 @@
         <img src="img/logo.jpg" alt="Logo">
         <h1>FULL STACK EXPERIMENTS</h1>
     </header>
+
+    <div class="info-box">
+        <p><strong>Name:</strong> Mukesh Sai</p>
+        <p><strong>Department:</strong> AI&DS</p>
+        <p><strong>Section:</strong> B</p>
+        <p><strong>Reg.no:</strong> 23L31A5489</p>
+    </div>
+
     <main>
         <div class="item">
             <span>Wikipedia</span>
@@ -147,11 +177,12 @@
             <button class="info-btn" onclick="openFile('/templates/code.html')">Show Info</button>
         </div>
     </main>
-    <script>
-        function showInfo(topic) {
-            alert(`Information about ${topic}`);
-        }
 
+    <footer>
+        &copy; 2025 Dynamic Programmer. All rights reserved.
+    </footer>
+
+    <script>
         function openFile(fileName) {
             window.open(fileName, '_blank');
         }
