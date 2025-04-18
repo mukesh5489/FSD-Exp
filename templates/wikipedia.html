@@ -31,28 +31,71 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            position: relative;
         }
 
-        .container img {
+        /* Home Button Animation */
+        .home-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            animation: pulse 2s infinite;
+            transition: transform 0.3s ease;
+        }
+
+        .home-btn:hover {
+            background-color: #ff4500;
+            transform: scale(1.1);
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(255, 99, 71, 0.8);
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
+            }
+        }
+
+        .content-box {
+            background: rgba(255, 255, 255, 0.2); 
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+            padding: 30px;
+            text-align: center;
+            max-width: 800px;
+        }
+
+        .content-box img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
         }
 
-        .container h1 {
+        .content-box h1 {
             font-size: 3em;
             font-weight: bold;
             margin: 20px 0;
             color: #333;
         }
 
-        .container p {
+        .content-box p {
             font-size: 1.2em;
-            max-width: 800px;
-            margin: 20px;
+            margin: 20px 0;
             color: #333;
         }
 
+        /* Wikipedia Button Animation */
         .wiki-btn {
             background-color: #4CAF50;
             color: #fff;
@@ -63,38 +106,40 @@
             font-size: 1.2em;
             margin-top: 20px;
             text-decoration: none;
+            animation: slideIn 1.5s ease-out;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .wiki-btn:hover {
             background-color: #45a049;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
 
-        .home-btn {
-            background-color: #ff6347;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 1em;
-            margin-bottom: 20px;
-        }
-
-        .home-btn:hover {
-            background-color: #ff4500;
+        @keyframes slideIn {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <button class="home-btn" onclick="goHome()">Home</button>
-        <img src="/img/wiki.jpg" alt="Wikipedia Logo">
-        <h1>Albert Einstein</h1>
-        <p>Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist who is best known for developing the theory of relativity.
-             Einstein also made important contributions to quantum mechanics. His mass–energy equivalence formula E = mc2, which arises from special relativity,
-              has been called "the world's most famous equation". He received the 1921 Nobel Prize in Physics for his services to theoretical physics, 
-            and especially for his discovery of the law of the photoelectric effect.</p>
-        <a href="https://en.wikipedia.org/wiki/Albert_Einstein" class="wiki-btn">Read more on Wikipedia</a>
+        <div class="content-box">
+            <img src="/img/wiki.jpg" alt="Wikipedia Logo">
+            <h1>Albert Einstein</h1>
+            <p>Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist who is best known for developing the theory of relativity.
+                Einstein also made important contributions to quantum mechanics. His mass–energy equivalence formula E = mc2, which arises from special relativity,
+                has been called "the world's most famous equation". He received the 1921 Nobel Prize in Physics for his services to theoretical physics, 
+                and especially for his discovery of the law of the photoelectric effect.</p>
+            <a href="https://en.wikipedia.org/wiki/Albert_Einstein" class="wiki-btn">Read more on Wikipedia</a>
+        </div>
     </div>
     <script>
         function goHome() {
