@@ -4,11 +4,25 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            background: linear-gradient(270deg, #ff7e5f, #feb47b, #6a11cb, #2575fc);
+            background-size: 800% 800%;
             color: #fff;
             text-align: center;
             margin: 0;
             padding: 0;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .container {
@@ -54,6 +68,7 @@
         .wiki-btn:hover {
             background-color: #45a049;
         }
+
         .home-btn {
             background-color: #ff6347;
             color: #fff;
@@ -68,23 +83,6 @@
         .home-btn:hover {
             background-color: #ff4500;
         }
-        button, .wiki-btn {
-            background-color: #fff;
-            color: #333;
-            border: none;
-            padding: 15px 30px;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 1.2em;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-        }
-
-        button:hover, .wiki-btn:hover {
-            background-color: #ddd;
-            transform: scale(1.1);
-            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 25px rgba(0, 255, 255, 0.5), 0 0 35px rgba(0, 255, 255, 0.5);
-        }
     </style>
 </head>
 <body>
@@ -96,7 +94,7 @@
              Although it may be played with larger teams, the most common forms of the game are "singles" (with one player per side) and "doubles" (with two players per side). 
              Badminton is often played as a casual outdoor activity in a yard or on a beach; formal games are played on a rectangular indoor court.
               Points are scored by striking the shuttlecock with the racquet and landing it within the opposing side's half of the court.</p>
-        <a href="https://en.wikipedia.org/wiki/Badminton" class="wiki-btn" target="_blank">Read more on Wikipedia</a>
+<a href="https://en.wikipedia.org/wiki/Badminton" class="wiki-btn">Read more on Wikipedia</a>
     </div>
     <script>
         function goHome() {
