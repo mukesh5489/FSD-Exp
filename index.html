@@ -2,18 +2,31 @@
 <head>
     <title>Full Stack Experiments</title>
     <style>
-       body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    color: #fff;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    animation: backgroundAnimation 10s infinite alternate;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(270deg, #ff7e5f, #feb47b, #722aca, #2bd1eb);
+            background-size: 800% 800%;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
 
         header {
             background-color: #333;
@@ -160,17 +173,6 @@
                 transform: translateX(-100%);
             }
         }
-        @keyframes backgroundAnimation {
-    0% {
-        background: linear-gradient(to right, #ff7e5f, #feb47b);
-    }
-    50% {
-        background: linear-gradient(to right, #feb47b, #86a8e7);
-    }
-    100% {
-        background: linear-gradient(to right, #86a8e7, #ff7e5f);
-    }
-}
     </style>
 </head>
 <body>
@@ -215,7 +217,7 @@
 
     <script>
         function openFile(fileName) {
-            window.open(fileName, '_blank');
+            window.location.href = fileName;
         }
     </script>
 </body>
